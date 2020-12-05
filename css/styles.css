@@ -27,6 +27,14 @@ img {
   align-items: center;
 }
 
+.link:active {
+  color: #2196F3;
+}
+
+.link:visited (
+  color: #212121;
+)
+
 .header {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -35,11 +43,13 @@ img {
 .header .container {
   display: flex;
   align-items: center;
+  margin-bottom: 32px;
 }
 
 .header .navigation {
   display: flex;
   align-items: center;
+  margin-bottom: 
 }
 
 .header .navigation-list {
@@ -49,6 +59,14 @@ img {
 
 .header .logo {
   margin-right: 93px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+/* identical to box height */
+  letter-spacing: 0.03em;
+  color: #000000;
 }
 
 .header .item:not(:last-child) {
@@ -81,13 +99,13 @@ img {
 }
 
 .header .item {
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  color: var(--secondary-text-color);
+  color: #212121;
 }
 
 .header .item:hover,
@@ -97,6 +115,10 @@ img {
 
 .header .link-active {
   color: var(--primary-text-color);
+}
+
+.header .address {
+  margin-bottom: 3
 }
 
 .email-header {
@@ -124,13 +146,17 @@ img {
 }
 
 .tagline {
-  width: 1600px;
-  height: 600px;
+  width: auto;
+  margin-bottom: 94px;
   background: #2f303a;
 }
 
 .title-box {
-  padding: 200px 452px 30px 452px;
+  
+  padding-top: 200px;
+  padding-right: 252px;
+  padding-left: 252px;
+  padding-bottom: 30px;
 }
 
 .title {
@@ -149,7 +175,7 @@ img {
 .tagline .button-order-box {
   width: 200px;
   height: 50px;
-  padding: 0px 700px 200px 700px;
+  padding: 0px 500px 200px 500px;
   margin-right: 0px;
 }
 
@@ -173,22 +199,23 @@ img {
   background: #188ce8;
 }
 
-.advantages .advantages-list {
+.our-work {
+  width: auto;
+}
+
+.our-work .advantages-list {
   display: flex;
   justify-content: space-between;
-  width: 1170px;
   height: 101px;
-  margin-top: 94px;
   margin-bottom: 94px;
 }
 
-.advantages .item {
+.advantages-list .item {
   display: inline-block;
   width: 270px;
-  height: 101px;
 }
 
-.advantages .item :not(:last-child) {
+.advantages-list .item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -215,18 +242,45 @@ img {
   margin-top: 10px;
 }
 
-.our-work .list {
+
+.our-work .title {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.our-work .presentation-list {
   display: flex;
   justify-content: space-between;
-  padding-top: 50px;
+  margin-top: 50px;
   margin-bottom: 94px;
 }
 
-.our-work .item.item :not(:last-child) {
+.presentation-list .item {
+  display: inline-block;
+  width: 370px;
+  height: 294px;
+}
+
+.presentation-list .item:not(:last-child) {
   margin-right: 30px;
 }
 
-.our-work .title,
+.our-team {
+  width: auto;
+  height: 648px;
+  background: #f5f4fa;
+}
+
+ .our-team .title-box {
+  padding-top: 94px;
+ }
+
 .our-team .title {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -235,47 +289,33 @@ img {
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
+  padding: 0px;
   color: var(--secondary-text-color);
 }
 
-.our-team {
-  width: 1600px;
-  height: 648px;
-  left: 0px;
-  top: 1449px;
-  background: #f5f4fa;
+  .our-team .our-team-list {
+  display: flex;
+  height: 368px;
+  justify-content: space-between;
 }
 
-.our-team .title-box {
-  padding-top: 94px;
-  padding-bottom: 50px;
-}
-
-.our-team .item {
+.our-team-list .item {
   display: inline-block;
   width: 270px;
   height: 368px;
   left: 215px;
   top: 1635px;
-  padding: 0px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.our-team .item:not(:last-child) {
+.our-team-list .item:not(:last-child) {
   margin-right: 30px;
 }
 
-.our-team .list {
-  display: inline-flex;
-  width: 1170px;
-  height: 368px;
-  justify-content: space-between;
-  margin: 0px 215px 94px 215px;
-}
-.employee-name {
+.our-team-list .employee-name {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -288,7 +328,7 @@ img {
   margin-top: 30px;
 }
 
-.employee-position {
+.our-team-list .employee-position {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -313,6 +353,14 @@ img {
   padding-top: 60px;
 }
 .footer .logo {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+/* identical to box height */
+  letter-spacing: 0.03em;
+  color: #2196F3;
   color: #ffffff;
 }
 
@@ -323,14 +371,14 @@ img {
 }
 
 .footer .address {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  /* or 171% */
-  letter-spacing: 0.03em;
-  color: #ffffff;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 24px;
+/* or 171% */
+letter-spacing: 0.03em;
+color: #FFFFFF;
 }
 
 .footer .item :not(:last-child) {
@@ -339,48 +387,76 @@ img {
 
 .footer .email,
 .footer .phone {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  /* or 171% */
-  letter-spacing: 0.03em;
-  color: #ffffff 60%;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 24px;
+/* or 171% */
+letter-spacing: 0.03em;
+color: rgba(255, 255, 255, 0.6);
 }
 
 .gallary .filters-list {
   display: flex;
-  margin: 94px 509px 34px 480px;
-  justify-content: space-betwe
-  align-items: center;
-  }
-
-.gallary .item:not(:last-child) {
+  margin: 94px 309px 34px 280px;
+  justify-content: space-between;
+  border: 0px;
+}
+   
+.filters-list .item:not(:last-child) {
   margin-right: 8px;
 }
 
-.gallary .filter {
+.item .filter {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
   /* identical to box height, or 162% */
+  
   text-align: center;
-  Vertical Align: Top
-  Letter Spacing: 3%
+  vertical-align: Top;
+  letter-spacing: 3%
   letter-spacing: 0.03em;
+  padding: 6px 22px;
   color: #212121;
-}
-
-.gallary .filter:hover,
-.gallary .filter:focus {
-  background-color: var(--primary-text-color);
+  background color: #F5F4FA;
+  border-radius: 4px;
   cursor: pointer;
+  border: 0px;
 }
 
-.list-portfolio .project-name {
+.item .filter:hover,
+.item .filter:focus {
+  background-color: var(--primary-text-color);
+}
+
+.gallary .portfolio-box {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 94px;
+}
+
+.portfolio-box .portfolio-list{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.portfolio-list .item {
+  flex-basis: calc(100/3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+  margin-right: 0px;
+}
+
+.portfolio-list .project-name {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: bold;
