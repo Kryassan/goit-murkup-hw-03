@@ -38,18 +38,19 @@ img {
 .header {
   padding-top: 20px;
   padding-bottom: 20px;
+  width: auto;
 }
 
 .header .container {
   display: flex;
   align-items: center;
+  margin-top: 32px;
   margin-bottom: 32px;
 }
 
 .header .navigation {
   display: flex;
   align-items: center;
-  margin-bottom: 
 }
 
 .header .navigation-list {
@@ -98,23 +99,26 @@ img {
   color: 000000;
 }
 
-.header .item {
+.navigation-list .item {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  color: #212121;
 }
 
-.header .item:hover,
-.header .item:focus {
+.navigation-list .item:hover,
+.navigation-list .item:focus {
   color: var(--primary-text-color);
 }
 
 .header .link-active {
   color: var(--primary-text-color);
+}
+
+.navigation-list .link {
+  color: #212121;
 }
 
 .header .address {
@@ -147,16 +151,8 @@ img {
 
 .tagline {
   width: auto;
-  margin-bottom: 94px;
   background: #2f303a;
-}
-
-.title-box {
-  
-  padding-top: 200px;
-  padding-right: 252px;
-  padding-left: 252px;
-  padding-bottom: 30px;
+  padding: 200px 0px;
 }
 
 .title {
@@ -173,10 +169,8 @@ img {
 }
 
 .tagline .button-order-box {
-  width: 200px;
-  height: 50px;
-  padding: 0px 500px 200px 500px;
-  margin-right: 0px;
+padding-top: 30px;
+text-align: center;
 }
 
 .button-order {
@@ -199,27 +193,28 @@ img {
   background: #188ce8;
 }
 
-.our-work {
+.advantages {
   width: auto;
+  margin: 94px auto;
 }
 
-.our-work .advantages-list {
+.advantages .list {
   display: flex;
   justify-content: space-between;
   height: 101px;
   margin-bottom: 94px;
 }
 
-.advantages-list .item {
+.advantages .item {
   display: inline-block;
   width: 270px;
 }
 
-.advantages-list .item:not(:last-child) {
+.advantages .item:not(:last-child) {
   margin-right: 30px;
 }
 
-.advantages-list .item-head {
+.advantages .item-head {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -230,7 +225,7 @@ img {
   color: var(--secondary-text-color);
 }
 
-.advantages-list .item-body {
+.advantages .item-body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -257,8 +252,8 @@ img {
 .our-work .presentation-list {
   display: flex;
   justify-content: space-between;
-  margin-top: 50px;
-  margin-bottom: 94px;
+  padding-top: 50px;
+  padding-bottom: 94px;
 }
 
 .presentation-list .item {
@@ -273,7 +268,6 @@ img {
 
 .our-team {
   width: auto;
-  height: 648px;
   background: #f5f4fa;
 }
 
@@ -295,8 +289,9 @@ img {
 
   .our-team .our-team-list {
   display: flex;
-  height: 368px;
   justify-content: space-between;
+  padding-top: 50px;
+  padding-bottom: 94px;
 }
 
 .our-team-list .item {
@@ -325,7 +320,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-  margin-top: 30px;
+  padding-top: 30px;
 }
 
 .our-team-list .employee-position {
@@ -338,7 +333,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--other-text-color);
-  margin-top: 10px;
+  padding-top: 10px;
 }
 
 .footer {
